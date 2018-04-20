@@ -1,4 +1,8 @@
 body {
+  margin: 0;
+}
+
+#wrapper {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -13,6 +17,15 @@ header, #portfolio, #contact, footer {
 header {
 	color: #ddd;
   background-color: #003476;
+  text-align: center;
+}
+
+header h1 {
+	margin: 5px 0;
+}
+
+header h2 {
+	margin: 5px 0;
 }
 
 #portfolio {
