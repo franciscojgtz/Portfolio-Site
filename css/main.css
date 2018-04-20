@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header, #portfolio, #contact, footer {
+	width: 100%;
+}
+
+header {
+	color: #ddd;
+  background-color: #003476;
+}
+
+#portfolio {
+	color: #ddd;
+  background-color: #0062d2;
+}
+
+#contact {
+	color: #333;
+  background-color: #b4d2f7;
+}
+
+footer {
+	color: #333;
+  background-color: #dfe1e5;
+}
