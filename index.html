@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- Custom Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,15 +45,12 @@
 		<section id="contact">
 			<h2>Contact</h2>
 			<form action="/action_page.php">
-				<legend>Personal information:</legend>
-				First name:<br>
-				<input type="text" name="name" value="Name"><br>
-				Last name:<br>
-				<input type="email" name="email" value="email@domain.com"><br><br>
+				<label>Name</label>
+				<input type="text" name="name" placeholder="Name"><br>
+				<label>Email</label>
+				<input type="email" name="email" placeholder="email@domain.com"><br><br>
 
-				<textarea name="message" >
-					The cat was playing in the garden.
-				</textarea>
+				<textarea name="message" placeholder="Message"></textarea>
 				<input type="submit" value="Submit">
 			</form>
 		</section>
