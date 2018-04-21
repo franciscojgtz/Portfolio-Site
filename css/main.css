@@ -4,7 +4,7 @@ body {
 
 .main {
 	margin: 0;
-	padding: 0;
+	padding: 0px;
 }
 
 .wrapper {
@@ -18,6 +18,11 @@ body {
 header, #portfolio, #contact, footer {
 	width: 100%;
 }
+
+h1, h2, h3, h4, h5, h6, h7 {
+	padding: 0 10px;
+}
+
 /*HEADER*/
 header {
 	color: #ddd;
@@ -40,7 +45,7 @@ header h2 {
 }
 
 #portfolio h2 {
-	margin-left: 10px;
+
 }
 
 .project {
@@ -57,6 +62,10 @@ header h2 {
 #contact {
 	color: #333;
   background-color: #b4d2f7;
+}
+
+#contact form {
+	padding: 0 10px;
 }
 
 #contact form textarea{
