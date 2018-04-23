@@ -21,27 +21,30 @@ header, #portfolio, #contact, footer {
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-  margin: 0 10px;/*check this margin*/
+  margin: 10px;/*check this margin*/
+  text-align: center;
 }
 
 header {
-	color: #ddd;
-  background-color: #003476;
+	color:   #DCDCDC;
+  background-color: #2F4F4F;
+  text-align: center;
 }
 
 header h1 {
-
+  margin: 0 10px 5px 10px;
 }
 
 header h2 {
-
+  margin: 5px 10px 10px 10px;
+  padding-bottom: 10px;
 }
-
 
 /*PORTFOLIO*/
 #portfolio {
-	color: #ddd;
-  background-color: #0062d2;
+	//color: #ddd;
+  color:  #2F4F4F;
+  //background-color: #0062d2;
 
 }
 
@@ -64,8 +67,8 @@ header h2 {
 
 /*CONTACT*/
 #contact {
-	color: #333;
-  background-color: #b4d2f7;
+	color:   #DCDCDC;
+  background-color: #2F4F4F;
 }
 
 #contact form {
@@ -89,7 +92,7 @@ footer {
 
 @media (min-width: 600px) {
   body {
-    background-color: red;
+
   }
 
   .project {
@@ -99,12 +102,17 @@ footer {
 
 @media (min-width: 800px) {
   body {
-    background-color: green;
+    
   }
 
   .main {
-    width: 800px;
+    width: 1024px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .project {
+    width: 33.33%;
+  }
 }
+
