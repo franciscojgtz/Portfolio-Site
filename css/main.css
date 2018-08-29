@@ -8,6 +8,10 @@ img, embed, object, video {
   max-width: 100%;
 }
 
+img {
+  display: block;
+}
+
 .main {
 
 }
@@ -26,7 +30,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 
 header {
-	color:   #DCDCDC;
+	color:#DCDCDC;
   background-color: #2F4F4F;
   text-align: center;
 }
@@ -38,6 +42,42 @@ header h1 {
 header h2 {
   margin: 5px 10px 10px 10px;
   padding-bottom: 10px;
+}
+
+/*Hero*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+  // height: 50%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
 }
 
 /*PORTFOLIO*/
@@ -63,6 +103,10 @@ header h2 {
   width: 100%;
   color: #333;
   background-color: #dfe1e5;
+}
+
+.project img {
+  width: 100%;
 }
 
 /*CONTACT*/
@@ -102,7 +146,7 @@ footer {
 
 @media (min-width: 800px) {
   body {
-    
+
   }
 
   .main {
