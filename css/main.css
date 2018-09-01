@@ -87,18 +87,17 @@ header {
   padding: 1rem;
 }
 
-.hero-text button {
-  border: none;
-  outline: 0;
+.hero-text a {
   display: inline-block;
   padding: 1rem 2.5rem;
   color: black;
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.hero-text button:hover {
+.hero-text a:hover {
   background-color: #555;
   color: white;
 }
