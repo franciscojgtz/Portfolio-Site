@@ -21,9 +21,6 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
-  text-align: center;
-}
 
 header {
 	color:#DCDCDC;
@@ -125,10 +122,32 @@ header {
 
 .project {
   width: 100%;
-  color: #333;
   background-color: #2F4F4F;
   padding: 1rem;
   margin: 1rem;
+  color: rgb(231, 230, 230);
+}
+
+.project h3 {
+  text-align: center;
+}
+
+.project p {
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+}
+
+.project a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.project a:visited {
+  color: #fff;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 .project img {
