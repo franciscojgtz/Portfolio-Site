@@ -111,6 +111,7 @@ header {
 #portfolio h2 {
  margin: 100px 0;
  font-size: 4rem;
+ text-align: center;
 }
 
 .projects-wrapper {
@@ -156,8 +157,12 @@ header {
 
 /*FOOTER*/
 footer {
-	color: #333;
-  background-color: #dfe1e5;
+	color: #555;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  border-top: 1px solid #555;
+  margin-top: 100px;
 }
 
 @media (min-width: 800px) {
