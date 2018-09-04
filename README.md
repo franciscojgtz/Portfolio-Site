@@ -1,2 +1,8 @@
-# homepage-2018
-Personal home page 
+# Portfolio Site
+This is my personal porfolio website. 
+
+## Technologies used
+
+- HTML5
+- CSS3
+- JavaScript
