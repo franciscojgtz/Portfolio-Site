@@ -74,20 +74,207 @@ header {
   position: relative;
 }
 
+/*Hero Image*/
 //jpg image for browsers that don't support webp
 .no-webp .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.jpg");
 }
 
 //webp image for browsers that support it
 .webp .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.webp");
 }
 
 //if JavaScript is disabled, add a jpg image
 .no-js .elementWithBackgroundImage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.jpg");
 }
+
+//1x displays
+@media screen and (min-width: 300px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.jpg");
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.jpg");
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.jpg");
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1000.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1000.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1000.jpg");
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.jpg");
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+  }
+}
+
+//2x displays
+@media screen and (min-resolution: 2dppx) and (min-width: 300px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.jpg");
+  }
+}
+
+@media screen and (min-resolution: 2dppx) and (min-width: 600px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.jpg");
+  }
+}
+
+@media screen and (min-resolution: 2dppx) and (min-width: 900px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+  }
+}
+
+//3x displays
+@media screen and (min-resolution: 3dppx) and (min-width: 300px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.jpg");
+  }
+}
+
+@media screen and (min-resolution: 3dppx) and (min-width: 600px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+  }
+}
+
+@media screen and (min-resolution: 3dppx) and (min-width: 900px) {
+  .no-webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+  }
+
+  .webp .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+  }
+}
+/*End of Hero Image*/
 
 .hero-text {
   text-align: center;
@@ -179,7 +366,9 @@ footer {
   margin-top: 100px;
 }
 
-@media (min-width: 800px) {
+/**/
+
+@media screen and (min-width: 800px) {
   .navigation__list {
     text-align: right;
   } 
@@ -195,11 +384,11 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   
 }
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   body {
     width: 1550px;
     margin-left: auto;
