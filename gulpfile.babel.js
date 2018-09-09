@@ -93,6 +93,18 @@ function webPImages(done) {
     .on('finish', done));
 }
 
+/**
+ * Transform jpg images into webP
+ * @param {done} done 
+ */
+function webPImagesTransform(done) {
+  return gulp.src(`${paths.images.src}.jpg`)
+  .pipe(plumber())
+  .pipe(webp())
+  .pipe(gulp.dest(paths.images.dest))
+  .on('finish', done);
+}
+
 function jpgImages(done) {
   const imgSizes = ['300', '400', '500', '600', '700', '800', '900', '1000', '1500', '2000'];
   return imgSizes.forEach(size => gulp.src(`${paths.images.src}.jpg`)
@@ -156,6 +168,7 @@ function watch() {
 const dev = gulp.series(clean, copyHTML, styles, scripts, serve, watch);
 
 export { optimizeImages };
+export { webPImagesTransform }
 export { webPImages };
 export { jpgImages };
 export { cleanImages };
