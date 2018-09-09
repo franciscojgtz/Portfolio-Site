@@ -31,7 +31,7 @@
 <body>
 	<div class="main wrapper">
 		<header>		
-			<div class="hero-image">
+			<div class="hero-image" role="img" aria-label="computer desk">
 				<nav class="navigation">
 					<ul class="navigation__list">
 						<li class="navigation__list__item">
@@ -90,7 +90,34 @@
 			<div class="projects-wrapper">
 				<div class="project">
 					<h3>Restaurant Reviews</h3>
-					<img src="img/restaurtant-reviews_desktop.jpg" alt="screenshot of restaurant reviews">
+					<picture>
+							<source 
+								data-srcset="/img/restaurtant-reviews_desktop_300.webp 300w, 
+								/img/restaurtant-reviews_desktop_400.webp 400w,
+								/img/restaurtant-reviews_desktop_500.webp 500w,
+								/img/restaurtant-reviews_desktop_600.webp 600w,
+								/img/restaurtant-reviews_desktop_700.webp 700w,
+								/img/restaurtant-reviews_desktop_800.webp 800w,
+								/img/restaurtant-reviews_desktop_900.webp 900w,
+								/img/restaurtant-reviews_desktop_1000.webp 1000w,
+								/img/restaurtant-reviews_desktop_1500.webp 1500w"
+								type="image/webp">
+							<source 
+								data-srcset="/img/restaurtant-reviews_desktop_300.jpg 300w, 
+								/img/restaurtant-reviews_desktop_400.jpg 400w,
+								/img/restaurtant-reviews_desktop_500.jpg 500w,
+								/img/restaurtant-reviews_desktop_600.jpg 600w,
+								/img/restaurtant-reviews_desktop_700.jpg 700w,
+								/img/restaurtant-reviews_desktop_800.jpg 800w,
+								/img/restaurtant-reviews_desktop_900.jpg 900w,
+								/img/restaurtant-reviews_desktop_1000.jpg 1000w,
+								/img/restaurtant-reviews_desktop_1500.jpg 1500w"
+								type="image/jpg">
+							<img data-src="img/restaurtant-reviews_desktop_300.jpg" 
+								 alt="screenshot of restaurant reviews" 
+								 data-sizes="auto" 
+								 class="lazyload">
+						</picture>
 					<p>
 						Restaurant Reviews is a Progressive Web App. I used gulp as a built tool and flexbox to create a grid system.
 						Lighthouse scores for Progressive Web App, Performance, and Accessibility were at leat 90.
@@ -105,7 +132,34 @@
 				</div>
 				<div class="project">
 					<h3>North SD Gardens</h3>
-					<img src="img/northsdgardens_desktop.jpg" alt="screenshot of north sd gardens">
+					<picture>
+						<source 
+							data-srcset="/img/northsdgardens_desktop_300.webp 300w, 
+							/img/northsdgardens_desktop_400.webp 400w,
+							/img/northsdgardens_desktop_500.webp 500w,
+							/img/northsdgardens_desktop_600.webp 600w,
+							/img/northsdgardens_desktop_700.webp 700w,
+							/img/northsdgardens_desktop_800.webp 800w,
+							/img/northsdgardens_desktop_900.webp 900w,
+							/img/northsdgardens_desktop_1000.webp 1000w,
+							/img/northsdgardens_desktop_1500.webp 1500w"
+							type="image/webp">
+						<source 
+							data-srcset="/img/northsdgardens_desktop_300.jpg 300w, 
+							/img/northsdgardens_desktop_400.jpg 400w,
+							/img/northsdgardens_desktop_500.jpg 500w,
+							/img/northsdgardens_desktop_600.jpg 600w,
+							/img/northsdgardens_desktop_700.jpg 700w,
+							/img/northsdgardens_desktop_800.jpg 800w,
+							/img/northsdgardens_desktop_900.jpg 900w,
+							/img/northsdgardens_desktop_1000.jpg 1000w,
+							/img/northsdgardens_desktop_1500.jpg 1500w"
+							type="image/jpg">
+						<img data-src="/img/northsdgardens_desktop_300.jpg" 
+							 alt="screenshot of north sd gardens" 
+							 data-sizes="auto" 
+							 class="lazyload">
+					</picture>
 					<p>
 						I designed North SD Gardens for a client who does landscaping. I used baguetteBox.js for the work gallery. 
 						Having so many images to work with, gulp was very useful and saved me time.
@@ -121,7 +175,34 @@
 				</div>
 				<div class="project">
 					<h3>Angular Tips</h3>
-					<img src="img/angular-tips_desktop.jpg" alt="screenshot of angular tips">
+					<picture>
+							<source 
+								data-srcset="/img/angular-tips_desktop_300.webp 300w, 
+								/img/angular-tips_desktop_400.webp 400w,
+								/img/angular-tips_desktop_500.webp 500w,
+								/img/angular-tips_desktop_600.webp 600w,
+								/img/angular-tips_desktop_700.webp 700w,
+								/img/angular-tips_desktop_800.webp 800w,
+								/img/angular-tips_desktop_900.webp 900w,
+								/img/angular-tips_desktop_1000.webp 1000w,
+								/img/angular-tips_desktop_1500.webp 1500w"
+								type="image/webp">
+							<source 
+								data-srcset="/img/angular-tips_desktop_300.jpg 300w, 
+								/img/angular-tips_desktop_400.jpg 400w,
+								/img/angular-tips_desktop_500.jpg 500w,
+								/img/angular-tips_desktop_600.jpg 600w,
+								/img/angular-tips_desktop_700.jpg 700w,
+								/img/angular-tips_desktop_800.jpg 800w,
+								/img/angular-tips_desktop_900.jpg 900w,
+								/img/angular-tips_desktop_1000.jpg 1000w,
+								/img/angular-tips_desktop_1500.jpg 1500w"
+								type="image/jpg">
+							<img data-src="img/angular-tips_desktop_300.jpg" 
+								 alt="screenshot of angular tips" 
+								 data-sizes="auto" 
+								 class="lazyload">
+						</picture>
 					<p>
 						I combined two projects, <a href="https://www.angularcode.com/user-authentication-using-angularjs-php-mysql/">User authentication</a>
 						and <a href="https://www.angularcode.com/product-inventory-manager-using-angularjs-mysql-and-php-restful-api/">AngularJS RESTful API</a>,
@@ -137,7 +218,34 @@
 				</div>
 				<div class="project">
 					<h3>MyLeagueStats</h3>
-					<img src="img/myleaguestats_desktop.jpg" alt="screenshot of myleaguestats">
+					<picture>
+							<source 
+								data-srcset="/img/myleaguestats_desktop_300.webp 300w, 
+								/img/myleaguestats_desktop_400.webp 400w,
+								/img/myleaguestats_desktop_500.webp 500w,
+								/img/myleaguestats_desktop_600.webp 600w,
+								/img/myleaguestats_desktop_700.webp 700w,
+								/img/myleaguestats_desktop_800.webp 800w,
+								/img/myleaguestats_desktop_900.webp 900w,
+								/img/myleaguestats_desktop_1000.webp 1000w,
+								/img/myleaguestats_desktop_1500.webp 1500w"
+								type="image/webp">
+							<source 
+								data-srcset="/img/myleaguestats_desktop_300.jpg 300w, 
+								/img/myleaguestats_desktop_400.jpg 400w,
+								/img/myleaguestats_desktop_500.jpg 500w,
+								/img/myleaguestats_desktop_600.jpg 600w,
+								/img/myleaguestats_desktop_700.jpg 700w,
+								/img/myleaguestats_desktop_800.jpg 800w,
+								/img/myleaguestats_desktop_900.jpg 900w,
+								/img/myleaguestats_desktop_1000.jpg 1000w,
+								/img/myleaguestats_desktop_1500.jpg 1500w"
+								type="image/jpg">
+							<img data-src="img/myleaguestats_desktop_300.jpg" 
+								 alt="screenshot of myleaguestats" 
+								 data-sizes="auto" 
+								 class="lazyload">
+						</picture>
 					<p>
 						MyLeagueStats lets you handle the information for your soccer league easily. MyLeagueStats is a project built mostly with Object Oriented PHP. 
 						I used smarty templates to seperate my PHP from my HTML. Originally reCaptcha was used but it got removed after google dropped support for it.
@@ -153,7 +261,34 @@
 				</div>
 				<div class="project">
 					<h3>Tip Tracker</h3>
-					<img src="img/ajax_tip_tracker_desktop.jpg" alt="screenshot of myleaguestats">
+					<picture>
+							<source 
+								data-srcset="/img/ajax_tip_tracker_desktop_300.webp 300w, 
+								/img/ajax_tip_tracker_desktop_400.webp 400w,
+								/img/ajax_tip_tracker_desktop_500.webp 500w,
+								/img/ajax_tip_tracker_desktop_600.webp 600w,
+								/img/ajax_tip_tracker_desktop_700.webp 700w,
+								/img/ajax_tip_tracker_desktop_800.webp 800w,
+								/img/ajax_tip_tracker_desktop_900.webp 900w,
+								/img/ajax_tip_tracker_desktop_1000.webp 1000w,
+								/img/ajax_tip_tracker_desktop_1500.webp 1500w"
+								type="image/webp">
+							<source 
+								data-srcset="/img/ajax_tip_tracker_desktop_300.jpg 300w, 
+								/img/ajax_tip_tracker_desktop_400.jpg 400w,
+								/img/ajax_tip_tracker_desktop_500.jpg 500w,
+								/img/ajax_tip_tracker_desktop_600.jpg 600w,
+								/img/ajax_tip_tracker_desktop_700.jpg 700w,
+								/img/ajax_tip_tracker_desktop_800.jpg 800w,
+								/img/ajax_tip_tracker_desktop_900.jpg 900w,
+								/img/ajax_tip_tracker_desktop_1000.jpg 1000w,
+								/img/ajax_tip_tracker_desktop_1500.jpg 1500w"
+								type="image/jpg">
+							<img data-src="img/myleaguestats_desktop_300.jpg" 
+								 alt="screenshot of tiptracker" 
+								 data-sizes="auto" 
+								 class="lazyload">
+						</picture>
 					<p>
 						Tip Tracker is an application to help people keep track of their tipped income. This version of tip tracker was built with AJAX: HTML, CSS, JavaScript, PHP, and MySQL.
 						It makes asynchronous calls using the XHR API.
@@ -175,5 +310,6 @@
 	</div>
 
 	<!--JavaScript Files-->
+	<script type="application/javascript" src="js/lazysizes.min.js" async=""></script>
 </body>
 </html>
