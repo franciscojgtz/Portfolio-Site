@@ -67,12 +67,26 @@ header {
 
 /*Hero*/
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
   height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+//jpg image for browsers that don't support webp
+.no-webp .hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+}
+
+//webp image for browsers that support it
+.webp .hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.webp");
+}
+
+//if JavaScript is disabled, add a jpg image
+.no-js .elementWithBackgroundImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
 }
 
 .hero-text {
