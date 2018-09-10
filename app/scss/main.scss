@@ -357,6 +357,30 @@ header {
   width: 100%;
 }
 
+.project h4 {
+  text-align: center;
+}
+
+.project__features {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+.project__features__item {
+  width: 33.3333%;
+  text-align: center;
+  // background-color: pink;
+  // height: 150px;
+}
+
+.project__features__item__icon {
+  font-size: 6rem;
+}
+
 .project__links {
   list-style-type: none;
   display: flex;
@@ -399,6 +423,13 @@ footer {
 
 /**/
 
+
+@media screen and (min-width: 500px) {
+  .project__features__item__icon {
+    font-size: 10rem;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .navigation__list {
     text-align: right;
@@ -413,10 +444,16 @@ footer {
     width: 50%;
     width: calc(50% - 2rem);
   }
+
+  .project__features__item__icon {
+    font-size: 7rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  
+  .project__features__item__icon {
+    font-size: 10rem;
+  }
 }
 
 @media screen and (min-width: 1600px) {
