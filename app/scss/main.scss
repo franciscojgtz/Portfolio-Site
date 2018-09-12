@@ -308,13 +308,13 @@ header {
 }
 
 /*PORTFOLIO*/
-#portfolio {
+.portfolio {
   color:  rgba(0,0,0,.87);
 }
 
-#portfolio h2 {
+.portfolio h2 {
  margin: 100px 0;
- font-size: 8rem;
+ font-size: 4rem;
  text-align: center;
 }
 
@@ -373,8 +373,6 @@ header {
 .project__features__item {
   width: 33.3333%;
   text-align: center;
-  // background-color: pink;
-  // height: 150px;
 }
 
 .project__features__item__icon {
@@ -428,6 +426,10 @@ footer {
   .project__features__item__icon {
     font-size: 10rem;
   }
+
+  .portfolio h2 {
+    font-size: 6rem;;
+   }
 }
 
 @media screen and (min-width: 800px) {
@@ -444,6 +446,10 @@ footer {
     width: 50%;
     width: calc(50% - 2rem);
   }
+
+  .portfolio h2 {
+    font-size: 8rem;;
+   }
 
   .project__features__item__icon {
     font-size: 7rem;
