@@ -2,18 +2,23 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
 }
 
 /*use max- width: 100% to prevent images and other content from overflowing*/
-img, embed, object, video {
+img,
+embed,
+object,
+video {
   max-width: 100%;
 }
 
@@ -25,16 +30,15 @@ img {
   display: block;
 }
 
-
 header {
-	color:#DCDCDC;
-  background-color: rgba(0,0,0,.87);
+  color: #dcdcdc;
+  background-color: rgba(0, 0, 0, 0.87);
   text-align: center;
   margin-bottom: 100px;
 }
 
-/*navigation*/ 
- 
+/*navigation*/
+
 .navigation__list {
   list-style: none;
   text-align: center;
@@ -81,201 +85,243 @@ header {
 /*Hero Image*/
 //jpg image for browsers that don't support webp
 .no-webp .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/business-clean-computer-389819_300.jpg");
 }
 
 //webp image for browsers that support it
 .webp .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/business-clean-computer-389819_300.webp");
 }
 
 //if JavaScript is disabled, add a jpg image
 .no-js .elementWithBackgroundImage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/business-clean-computer-389819_300.jpg");
 }
 
 //1x displays
 @media screen and (min-width: 300px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_300.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_300.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_300.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_300.jpg");
   }
 }
 
 @media screen and (min-width: 600px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_600.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_600.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_600.jpg");
   }
 }
 
 @media screen and (min-width: 900px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_900.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_900.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_900.jpg");
   }
 }
 
 @media screen and (min-width: 1000px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1000.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1000.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1000.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1000.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1000.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1000.jpg");
   }
 }
 
 @media screen and (min-width: 1500px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1500.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1500.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1500.jpg");
   }
 }
 
 @media screen and (min-width: 2000px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.jpg");
   }
 }
 
 //2x displays
 @media screen and (min-resolution: 2dppx) and (min-width: 300px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_600.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_600.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_600.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_600.jpg");
   }
 }
 
 @media screen and (min-resolution: 2dppx) and (min-width: 600px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1500.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1500.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_1500.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_1500.jpg");
   }
 }
 
 @media screen and (min-resolution: 2dppx) and (min-width: 900px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.jpg");
   }
 }
 
 @media screen and (min-width: 2000px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819.jpg");
   }
 }
 
 //3x displays
 @media screen and (min-resolution: 3dppx) and (min-width: 300px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_900.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_900.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_900.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_900.jpg");
   }
 }
 
 @media screen and (min-resolution: 3dppx) and (min-width: 600px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819_2000.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819_2000.jpg");
   }
 }
 
 @media screen and (min-resolution: 3dppx) and (min-width: 900px) {
   .no-webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819.jpg");
   }
 
   .webp .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819.webp");
   }
 
   .no-js .elementWithBackgroundImage {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/business-clean-computer-389819.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/business-clean-computer-389819.jpg");
   }
 }
 /*End of Hero Image*/
@@ -325,7 +371,7 @@ header {
 
 /*PORTFOLIO*/
 .portfolio {
-  color:  rgba(0,0,0,.87);
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .portfolio h2 {
@@ -347,15 +393,11 @@ header {
   background-color: #f5f5f5;
   padding: 1rem;
   // margin: 1rem;
-  color: rgba(0,0,0,.87);
+  color: rgba(0, 0, 0, 0.87);
   // border-radius: 2rem;
   //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 1.6rem;
   border-bottom: 1px solid #000;
-}
-
-.project:last-child {
-  border-bottom: none;
 }
 
 .project h3 {
@@ -404,7 +446,7 @@ header {
 .project__links {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 0 2rem 0;
   padding: 0;
@@ -414,7 +456,7 @@ header {
   width: calc(50% - 2rem);
   margin: 0 1rem 0 1rem;
   text-align: center;
-  font-size: 1.8rem; 
+  font-size: 1.8rem;
 }
 
 .project__links__item a {
@@ -428,12 +470,11 @@ header {
 .project__links__item a:hover {
   color: #000;
   background-color: #999;
-  
 }
 
 /*FOOTER*/
 footer {
-	color: #555;
+  color: #555;
   padding: 1rem;
   text-align: center;
   font-size: 1.4rem;
@@ -453,46 +494,41 @@ footer {
   overflow: hidden;
 }
 
-
 @media screen and (min-width: 500px) {
   .project__features__item__icon {
     font-size: 10rem;
   }
 
-  .portfolio h2, .expertise h2 {
-    font-size: 6rem;;
-   }
+  .portfolio h2,
+  .expertise h2 {
+    font-size: 6rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
   .project {
-    //margin: 1rem;
     width: 50%;
-    //width: calc(50% - 2rem);
   }
 
-  .portfolio h2, .expertise h2 {
-    font-size: 8rem;;
-   }
+  .portfolio h2,
+  .expertise h2 {
+    font-size: 8rem;
+  }
 
   .project__features__item__icon {
     font-size: 6rem;
   }
-
-  .project:nth-child(odd) {
-    //border-right: 1px solid #000;
-}
 }
 
 @media screen and (min-width: 900px) {
   .navigation__list {
     text-align: right;
-  } 
+  }
 
   .navigation__list__item__link__text {
     display: inline;
     padding-left: 1rem;
-  }  
+  }
 
   .project__features__item__icon {
     font-size: 10rem;
@@ -506,11 +542,6 @@ footer {
 
   .project {
     width: 33.33%;
-    //width: calc(33.33% - 2rem);
-  }
-
-  .project:nth-last-child(-n+2) {
-    border: none;
   }
 }
 
