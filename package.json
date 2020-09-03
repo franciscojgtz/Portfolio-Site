@@ -48,7 +48,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
-    "lazysizes": "^4.1.0",
+    "lazysizes": "^5.2.1",
     "readable-stream": "^3.0.2",
     "replacestream": "^4.0.3"
   }
